@@ -1,0 +1,6 @@
+@import '../mixins/media';
+
+header {
+    @include media-tablet {
+    }
+}

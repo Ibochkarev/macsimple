@@ -1,0 +1,13 @@
++b.breadcrumbs
+  .container
+    .row
+      .col-12
+        +b.UL.breadcrumb(itemscope itemtype="http://schema.org/BreadcrumbList")
+          +e.LI.item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+            +e.A.link(href="#" itemprop="item")
+              +e.SPAN.title(itemprop="name") Главная
+              meta(itemprop="position", content="1")
+          +e.LI.item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+            +e.SPAN.title.breadcrumb__title--current Каталог
+            //- meta(href="#" itemprop="item")
+            meta(itemprop="position", content="3")
