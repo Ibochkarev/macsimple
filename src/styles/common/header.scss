@@ -1,6 +1,21 @@
-@import '../mixins/media';
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #000000;
 
-header {
-    @include media-tablet {
+    &__logo {
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &-link {
+            display: block;
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+        }
     }
 }

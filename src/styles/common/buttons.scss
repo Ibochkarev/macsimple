@@ -1,0 +1,25 @@
+.btn {
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(to bottom, #36b0f9, #1978f0);
+    letter-spacing: 0.5px;
+    width: max-content;
+
+    &:hover,
+    &:active {
+        color: #1978f0;
+        background: transparent;
+        border-color: #1978f0;
+    }
+}

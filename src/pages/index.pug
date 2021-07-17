@@ -1,9 +1,12 @@
 extends common/layout
+include common/mixins.pug
 
 block content
-  +b.DIV.main
-    .container
-      .row
-        .col-12
-          +e.H2.title Title
-      include includes/index/banner
+  .content
+    include includes/index/banner
+    include includes/index/reviews
+    include includes/index/faq
+    include includes/index/price
+    include includes/index/infoblock
+    include includes/index/departure
+    include includes/index/diagnostic

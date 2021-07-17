@@ -1,5 +1,11 @@
 +b.FOOTER.footer
-  .container
-    .row
-      .col-12
-        +e.text footer
+  +e.wrap
+    +e.copyrite
+      +e.copyrite-icon
+        img(src="img/icons/ic-copyleft.svg", alt="")
+      +e.copyrite-text
+        span 2021 Macsimple
+        span All rights released
+    +e.creator
+      a(href="https://bakin.ru", aria-label="https://bakin.ru", target="_blank", rel="noopener noreferrer")
+        img(src="img/global/Bakin.svg", alt="")

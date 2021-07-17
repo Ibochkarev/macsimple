@@ -67,7 +67,7 @@ html(lang='ru' itemscope)
     //- block manifestBrowserconfigFiles
     //-   link(rel='manifest', href='./manifest.json')
     //-   meta(name='msapplication-config' content='./browserconfig.xml')
-  body
+  body(class=pageName, itemscope itemtype="http://schema.org/WebPage")
     block header
       include header
     block content

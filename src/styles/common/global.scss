@@ -1,19 +1,78 @@
 @import '../../local_modules/normalize.css/normalize';
 
-html {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'SF UI Display', sans-serif;
+html {
+    height: stretch;
     margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: fill-available;
+}
+
+body {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    min-height: fill-available;
+    margin: 0;
+    padding: 0;
+    font-family: 'SF UI Display';
+    font-size: 18px;
+    font-weight: 400;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 a {
     text-decoration: none;
+    color: #041e42;
+
+    &:hover {
+        transition: 0.3 all ease-in-out;
+    }
+}
+
+.col-two {
+    max-width: auto;
+    columns: 2 auto;
+}
+
+input {
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+h1,
+h2 {
+    font-weight: 900;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1440px;
 }
