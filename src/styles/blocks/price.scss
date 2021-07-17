@@ -1,0 +1,19 @@
+.price {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        color: #1c1c1c;
+    }
+
+    .tab-content {
+        margin-top: 58px;
+    }
+}

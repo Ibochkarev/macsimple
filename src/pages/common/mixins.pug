@@ -1,0 +1,11 @@
+mixin reviews-card(data)
+  .swiper-slide
+    .reviews__card
+      .reviews__card-info
+        .reviews__card-text!=data.text
+        .reviews__card-bottom
+          .reviews__card-avatar
+            img(src="https://via.placeholder.com/60/", alt="")
+          .reviews__card-bottom__wrap
+            .reviews__card-title!=data.title
+            a.reviews__card-link(href="#" rel="nofollow" target="_blank") 1
