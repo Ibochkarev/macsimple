@@ -16,6 +16,6 @@ module.exports = function pug2html() {
             .pipe(pug({ pretty: true }))
             .pipe(htmlValidator())
             .pipe(bemValidator())
-            .pipe(gulp.dest('build'))
+            .pipe(gulp.dest('docs'))
     )
 }

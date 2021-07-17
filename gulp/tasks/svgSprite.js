@@ -11,5 +11,5 @@ module.exports = function svgSprite() {
             })
         )
         .pipe(rename('sprite.svg'))
-        .pipe(gulp.dest('build/img'))
+        .pipe(gulp.dest('docs/img'))
 }
