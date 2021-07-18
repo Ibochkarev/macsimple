@@ -23,8 +23,11 @@ $(document).ready(() => {
                 spaceBetween: 60,
             },
             // when window width is >= 640px
-            768: {
+            992: {
                 slidesPerView: 3,
+                spaceBetween: 35,
+            },
+            1024: {
                 spaceBetween: 130,
             },
         },

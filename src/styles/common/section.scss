@@ -2,6 +2,16 @@
     padding-top: 95px;
     padding-bottom: 70px;
 
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
     &__title {
         max-width: 700px;
         margin: 0 auto 60px;

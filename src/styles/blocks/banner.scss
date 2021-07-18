@@ -4,6 +4,10 @@
     background-size: cover;
     background-position: center;
 
+    @media (max-width: 575px) {
+        height: 350px;
+    }
+
     .container,
     .row {
         height: 100%;
@@ -18,7 +22,15 @@
     }
 
     &__info {
-        width: 50%;
+        flex-basis: 50%;
+
+        @media (max-width: 768px) {
+            flex-basis: 75%;
+        }
+
+        @media (max-width: 575px) {
+            flex-basis: 100%;
+        }
     }
 
     &__title {
@@ -28,6 +40,16 @@
         line-height: 1.17;
         color: #ffffff;
         letter-spacing: -0.8px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 35px;
+            font-size: 42px;
+        }
+
+        @media (max-width: 575px) {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
     }
 
     &__text {
@@ -35,5 +57,15 @@
         font-size: 24px;
         font-weight: 500;
         color: #ffffff;
+
+        @media (max-width: 768px) {
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 575px) {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
     }
 }
