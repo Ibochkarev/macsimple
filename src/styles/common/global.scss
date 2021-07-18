@@ -8,17 +8,17 @@
 
 html {
     height: stretch;
-    height: fill-available;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
 
 body {
+    background-color: #ffffff;
     position: relative;
     display: flex;
     min-height: 100vh;
-    min-height: fill-available;
+    min-height: stretch;
     margin: 0;
     padding: 0;
     font-family: 'SF UI Display', sans-serif;
