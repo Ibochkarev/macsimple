@@ -1,9 +1,16 @@
 .faq {
+    &__list {
+        margin-bottom: 70px;
+    }
+
     &__item {
         display: flex;
         width: 100%;
-        margin-bottom: 30px;
         flex-direction: column;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
 
         &-question {
             display: flex;
@@ -39,7 +46,23 @@
     }
 
     &__more-btn {
+        cursor: pointer;
+        display: block;
+        height: 50px;
+        min-width: 255px;
         margin: 0 auto;
+        font-size: 18px;
+        font-weight: 700;
         text-align: center;
+        color: #1978f0;
+        background: transparent;
+        border: solid 1px #1978f0;
+        border-radius: 25px;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            color: #ffffff;
+            background-color: #1978f0;
+        }
     }
 }

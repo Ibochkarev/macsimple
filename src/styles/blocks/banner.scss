@@ -1,11 +1,25 @@
-.banner {
+.main-block {
+    position: relative;
     height: 100vh;
+    max-height: 840px;
     min-height: 100%;
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(141deg, #e5e6eb 8%, #f5f5f7 90%);
 
-    @media (max-width: 575px) {
-        height: 350px;
+    @media (max-width: 768px) {
+        height: auto;
+        max-height: auto;
+    }
+
+    &__img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+            position: relative;
+            object-fit: contain;
+        }
     }
 
     .container,
@@ -22,14 +36,17 @@
     }
 
     &__info {
-        flex-basis: 50%;
+        position: relative;
+        width: 40%;
+        color: #373739;
 
-        @media (max-width: 768px) {
-            flex-basis: 75%;
+        @media (max-width: 991px) {
+            width: 60%;
         }
 
-        @media (max-width: 575px) {
-            flex-basis: 100%;
+        @media (max-width: 768px) {
+            width: 100%;
+            padding: 16px 0 30px;
         }
     }
 
@@ -38,17 +55,24 @@
         font-size: 60px;
         font-weight: 900;
         line-height: 1.17;
-        color: #ffffff;
+        color: #000000;
         letter-spacing: -0.8px;
+
+        @media (max-width: 1336px) {
+            margin-bottom: 50px;
+            font-size: 45px;
+        }
 
         @media (max-width: 768px) {
             margin-bottom: 35px;
-            font-size: 42px;
+            font-size: 35px;
         }
 
         @media (max-width: 575px) {
-            margin-bottom: 20px;
-            font-size: 24px;
+            margin-bottom: 16px;
+            font-size: 30px;
+            line-height: 1.33;
+            letter-spacing: -0.4px;
         }
     }
 
@@ -56,7 +80,12 @@
         margin-bottom: 70px;
         font-size: 24px;
         font-weight: 500;
-        color: #ffffff;
+        color: #353941;
+
+        @media (max-width: 1336px) {
+            margin-bottom: 45px;
+            font-size: 20px;
+        }
 
         @media (max-width: 768px) {
             margin-bottom: 35px;
@@ -64,8 +93,9 @@
         }
 
         @media (max-width: 575px) {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             font-size: 16px;
+            line-height: 1.25;
         }
     }
 }

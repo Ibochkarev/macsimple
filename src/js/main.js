@@ -27,9 +27,7 @@ $(document).ready(() => {
                 slidesPerView: 3,
                 spaceBetween: 35,
             },
-            1024: {
-                spaceBetween: 130,
-            },
+            1336: { slidesPerView: 3, spaceBetween: 130 },
         },
     })
 })

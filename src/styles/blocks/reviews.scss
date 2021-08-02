@@ -1,4 +1,6 @@
 .reviews {
+    padding-bottom: 0;
+
     .swiper-slide-active {
         .reviews__card {
             opacity: 1;
@@ -15,9 +17,9 @@
         opacity: 0.6;
         background-color: #ffffff;
 
-        @media (max-width: 992px) {
+        @media (max-width: 1280px) {
             min-height: 350px;
-            padding: 40px 40px;
+            padding: 40px 25px;
         }
 
         @media (max-width: 575px) {
@@ -40,6 +42,10 @@
             text-align: center;
             color: #414141;
             letter-spacing: normal;
+
+            @media (max-width: 1200px) {
+                font-size: 20px;
+            }
 
             @media (max-width: 992px) {
                 font-size: 18px;
@@ -70,5 +76,23 @@
             display: flex;
             align-items: center;
         }
+    }
+
+    .swiper-wrapper {
+        margin-bottom: 70px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #353941 !important;
+        border-radius: 5px !important;
+        width: 40px !important;
+        height: 10px !important;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #22201e;
+        width: 10px;
+        height: 10px;
+        transition: all ease 0.3s;
     }
 }

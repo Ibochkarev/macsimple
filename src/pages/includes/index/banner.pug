@@ -1,4 +1,6 @@
-+b.DIV.banner(style="background-image: url('https://via.placeholder.com/2560x960/');")
++b.DIV.main-block
+  picture
+    +e.IMG.img(src="img/main/bitmap.jpg" srcse="img/main/bitmap@2x.jpg 2x, img/main/bitmap@3x.jpg 3x" alt="banner")
   .container
     .row
       .col-12
@@ -8,9 +10,8 @@
               br
               |
               | в Москве
-            +e.text Договор с гарантией на работы и запчасти
-              br
-              | Бесплатный выезд мастера
-              br
-              | Срочный ремонт в Вашем присутствии
+            +e.text
+              p Договор с гарантией на работы и запчасти
+              p Бесплатный выезд мастера
+              p Срочный ремонт в Вашем присутствии
             +e.BUTTON.btn.btn(type="button") Вызвать мастера
