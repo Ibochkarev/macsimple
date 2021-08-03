@@ -1,0 +1,62 @@
+.diagnostic {
+    padding-bottom: 45px;
+
+    &__form{
+        &-wrapper{
+            position: relative;
+            display: flex;
+            align-items: center;
+            max-width: 700px;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+
+        .form {
+            width: 100%;
+            max-width: 455px;
+            padding-bottom: 70px;
+        }
+
+        &-button {
+            margin: 0 auto;
+        }
+    }
+
+    .row-line-horizontal{
+        width: 100%;
+    }
+}
+
+.center{
+    text-align: center;
+
+    &__title {
+        margin-top: 15px;
+        margin-bottom: 40px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #1c1c1c;
+    }
+
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        font-size: 24px;
+        font-weight: 500;
+        color: #414141;
+        flex-direction: column;
+
+        a {
+            margin-bottom: 25px;
+            color: #1978f0;
+        }
+    }
+
+    &__text{
+        margin-bottom: 25px;
+    }
+}

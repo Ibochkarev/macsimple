@@ -1,0 +1,46 @@
+.form {
+    .form-floating > .form-control {
+        cursor: pointer;
+        padding: 2.2rem 20px;
+        font-size: 20px;
+        color: #414141;
+        border: 1px solid #f5f5f7;
+        border-radius: 5px;
+        background-color: #f5f5f7;
+
+        &:hover {
+            border: 1px solid #e5edfa;
+            background-color: #e5edfa;
+        }
+
+        ::placeholder {
+            color: #414141;
+        }
+    }
+
+    .form-floating > label {
+        padding: 1.6rem 20px;
+        color: #414141;
+    }
+
+    .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+        font-size: 12px;
+        transform: scale(.85) translateY(-.9rem) translateX(.15rem);
+    }
+
+    .form-select-lg {
+        cursor: pointer;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        font-size: 20px;
+        color: #414141;
+        border: 1px solid #f5f5f7;
+        border-radius: 5px;
+        background-color: #f5f5f7;
+
+        &:hover {
+            border: 1px solid #e5edfa;
+            background-color: #e5edfa;
+        }
+    }
+}

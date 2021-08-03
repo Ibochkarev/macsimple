@@ -1,6 +1,33 @@
 +b.SECTION.diagnostic.section
   .container
-    .row
+    .row.row-line-horizontal
       .col-12
-        h2.section__title Выезд и диагностика бесплатно
+        h2.section__title Диагностика
+          br
+          | в сервисном центре
         .section__introtext Диагностика в сервисном центре Macsimple проводится по предварительной записи.
+        +e.form
+          +e.form-wrapper
+            form.form(action="")
+              .form-floating.mb-3
+                input#name.form__input.form-control(type="text" placeholder="Имя")
+                label(for="name") Имя
+              .form-floating.mb-3
+                input#phone.form__input.form-control(type="tel" placeholder="Номер телефона")
+                label(for="phone") Номер телефона
+              select#device.form-select.form-select-lg.mb-3(aria-label="Ваше Apple устройство")
+                option(selected) Ваше Apple устройство
+                option(value="Macbook Air") Macbook Air
+                option(value="Macbook Pro") Macbook Pro
+                option(value="iMac") iMac
+                option(value="Mac mini") Mac mini
+              +e.BUTTON.form-button.btn(type="submit") Записаться на диагностику
+
+            .row-line-horizontal
+            +b.center
+              +e.title Адрес сервисного центра Macsimple
+              +e.info
+                +e.text Москва, ул.Нагатинская 29 корп. 4 ст. метро Коломенская
+                +e.A.link(href="#" target="_blank") Смотреть в навигаторе
+                +e.A.phone(href="tel:+74993946861") +7 499 394 68 61
+                +e.A.email(href="mailto:macsimple911@gmail.com") macsimple911@gmail.com
