@@ -2,6 +2,10 @@
     &__list {
         max-width: 1040px;
         margin: 0 auto 70px;
+
+        @media (max-width: 768px) {
+            margin: 0 auto 45px;
+        }
     }
 
     &__item {
@@ -10,8 +14,8 @@
         flex-direction: column;
 
         &.hidden {
-            height: 0;
             overflow: hidden;
+            height: 0;
             transition: .2s linear;
         }
 
@@ -39,6 +43,12 @@
                 border-radius: 33px;
                 background-color: #458df5;
 
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                    border-radius: 10px;
+                    padding: 10px 15px;
+                }
+
                 &::before {
                     z-index: 0;
                     position: absolute;
@@ -50,6 +60,10 @@
                     transform: rotate(1deg);
                     content: '';
                     background-repeat: no-repeat;
+
+                    @media (max-width: 768px) {
+                        right: -15px;
+                    }
                 }
             }
         }
@@ -66,17 +80,27 @@
             border-radius: 33px;
             background-color: #e9e9ea;
 
+            @media (max-width: 768px) {
+                padding: 10px 15px;
+                font-size: 16px;
+                border-radius: 10px;
+            }
+
             &::before {
                 z-index: 0;
                 position: absolute;
-                left: -25px;
                 bottom: 0;
+                left: -25px;
                 width: 50px;
                 height: 35px;
                 background: url('../img/global/messege-tail-grey.svg');
                 transform: rotate(1deg);
                 content: '';
                 background-repeat: no-repeat;
+
+                @media (max-width: 768px) {
+                    left: -15px;
+                }
             }
         }
     }

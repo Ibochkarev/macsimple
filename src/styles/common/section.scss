@@ -32,6 +32,13 @@
             font-size: 38px;
             letter-spacing: -0.93px;
         }
+
+        @media (max-width: 575px) {
+            margin: 0 auto 40px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.25;
+        }
     }
 
     &__introtext {
@@ -42,5 +49,9 @@
         line-height: 1.25;
         text-align: center;
         color: #414141;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
     }
 }
