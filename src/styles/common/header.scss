@@ -12,9 +12,13 @@
     background-color: #000000;
 
     &__logo {
-        color: #ffffff;
         font-size: 17px;
         font-weight: bold;
+        color: #ffffff;
+
+        @media (max-width: 575px){
+            font-size: 14px;
+        }
     }
 
     &__phone {
@@ -29,6 +33,10 @@
             font-weight: bold;
             color: white;
             transition: .5s all ease-in-out;
+
+            @media (max-width: 575px){
+                font-size: 14px;
+            }
 
             &:hover {
                 color: darken(white, 30%);

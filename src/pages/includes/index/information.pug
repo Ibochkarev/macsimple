@@ -3,23 +3,36 @@
     .row
       .col-12
         +e.wrapper
-          +e.item(style="background-image: url('img/information/ill-macbook3x.png')")
+          +e.item
+            +e.IMG.item-bg(src="img/information/ill-macbook3x.png")
             +e.item-info
               +e.item-info__wrap
                 +e.H2.item-title._first Почему Ваш Mac так быстро как новый?
                 +e.item-text Macsimple cервисный центр по ремонту техники Apple с фокусом на качество и оперативность.
-          +e.item(style="background-image: url('img/information/bitmap3x.png')")
+          +e.item
+            +e.IMG.item-bg(src="img/information/bitmap3x.png")
             +e.item-info
               +e.item-info__wrap
-                +e.H2.item-title Только проверенные запчасти от производителя
-                +e.item-text У нас в Macsimple есть свой склад с особенно востребованными комплектующими, это позволяет ускорить ремонт до считанных минут.
-          +e.item(style="background-image: url('img/information/mac-repair3x.png')")
+                +e.H2.item-title Бесплатная диагностика на дому и в сервисе
+                +e.item-text В Macsimple специалисты с опытом работы более 7 лет, на диагностику требуется всего 20 минут.
+                +e.stats
+                  +e.stats-block
+                    +e.stats-block__number 7
+                      span лет
+                    +e.stats-block__text опыта работы
+                  +e.stats-block
+                    +e.stats-block__number 20
+                      span мин.
+                    +e.stats-block__text диагностика устройства
+          +e.item
+            +e.IMG.item-bg(src="img/information/mac-repair3x.png")
             +e.item-info
               +e.item-info__wrap
-                +e.H2.item-title Бесплатную, выездную диагностику проводит мастер
-                +e.item-text У нас в Macsimple на диагностику выезжает мастер который в вашем присутствии может починить неисправность не забирая устройство в сервис.
-          +e.item(style="background-image: url('img/information/bitmap3x.png')")
+                +e.H2.item-title Ремонт в вашем присутствии — всё прозрачно
+                +e.item-text Мы в Macsimple ценим открытость, поэтому вы можете присутствовать при ремонте вашего устройства.
+          +e.item
+            +e.IMG.item-bg(src="img/information/bitmap3x.png")
             +e.item-info
               +e.item-info__wrap
-                +e.H2.item-title Мы используем исключительно профессиональное оборудование
+                +e.H2.item-title Сохраняем официальную гарантию
                 +e.item-text Мы Macsimple ценим профессиональный подход, это залог качества, поэтому в руках наших специалистов вы увидите только специализированный инструмент.
