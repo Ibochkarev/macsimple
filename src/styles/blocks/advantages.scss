@@ -46,11 +46,15 @@
     }
 
     .nav-link {
+        display: flex;
+        align-items: flex-start;
         width: 215px;
         padding: 0;
         opacity: 0.4;
+        flex-direction: column;
 
         img {
+            max-height: 50px;
             margin-bottom: 10px;
         }
 
@@ -107,9 +111,12 @@
         color: white;
         flex-direction: column;
 
+        @media (max-width: 1200px) {
+            padding-left: 0;
+        }
+
         @media (max-width: 991px) {
             margin-top: 40px;
-            padding-left: 0;
         }
 
         &__subtitle {
