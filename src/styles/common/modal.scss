@@ -1,0 +1,124 @@
+.modal {
+    padding: 64px 18px 25px;
+    text-align: center;
+    box-shadow: 0 8px 34px 0 rgba(53, 57, 65, 0.55);
+
+    &-backdrop {
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        background-color: rgba(53, 57, 65, 0.42);
+    }
+
+    &-dialog {
+        width: calc(100% - 30px);
+        max-width: 960px;
+        margin: 0;
+    }
+
+    &-header {
+        border: 0;
+    }
+
+    &-title {
+        font-size: 59px;
+        font-weight: 900;
+        color: #1c1c1c;
+    }
+
+    &-text {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.25;
+        color: #414141;
+    }
+
+    &-info {
+        margin: 0 auto 25px;
+    }
+
+    &-content {
+        position: relative;
+        border: 0;
+        border-radius: 20px;
+        box-shadow: none;
+
+        &::before {
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 60px;
+            width: 190px;
+            height: 75px;
+            content: '';
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('../img/global/Sticker.svg');
+        }
+    }
+
+    &-devices{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 45px;
+        gap: 10px;
+
+        &__item {
+            width: 25%;
+
+            input[type="radio"] {
+                display: none;
+            }
+
+            &-label {
+                cursor: pointer;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 15px 25px;
+                text-align: center;
+                border-radius: 10px;
+                transform: scale(0.95);
+                transition: all ease .7s;
+                background-color: #f5f5f7;
+                flex-direction: column;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all ease .7s;
+                }
+            }
+
+            &-title {
+                font-size: 18px;
+                font-weight: 600;
+                color: #414141;
+            }
+
+            :checked + label {
+                background-color: #cde1ff;
+            }
+        }
+    }
+
+    .form-data{
+        width: 100%;
+        max-width: 455px;
+        margin: 0 auto 80px;
+    }
+
+    .form__title {
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #1c1c1c;
+    }
+
+    .form-button {
+        height: 70px;
+        max-width: 370px;
+        margin: 0 auto;
+        line-height: 55px;
+    }
+}
