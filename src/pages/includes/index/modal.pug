@@ -1,42 +1,40 @@
 .modal.fade(id="modal" tabindex="-1" aria-labelledby="modal" aria-hidden="true")
   .modal-dialog.modal-dialog-centered
     .modal-content
-      .modal-header
-        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
       .modal-info
         .modal-title Вызов мастера
         .modal-text Диагностика на дому проводится мастером Macsimple бесплатно.
       .modal-body
-        .modal-content
-          form.modal-form.form(action="")
-            .modal-devices
-              .modal-devices__item
-                input#macbookair(type="radio" class="modal-devices__item-input" name="device")
-                label.modal-devices__item-label(for="macbookair")
-                  img(src="img/device/macbookpro.png" alt="macbook air")
-                  .modal-devices__item-title MacBook Air
-              .modal-devices__item
-                input#macbookpro(type="radio" class="modal-devices__item-input" name="device")
-                label.modal-devices__item-label(for="macbookpro")
-                  img(src="img/device/macbookpro.png" alt="MacBook Pro")
-                  .modal-devices__item-title MacBook Pro
-              .modal-devices__item
-                input#imac(type="radio" class="modal-devices__item-input" name="device")
-                label.modal-devices__item-label(for="imac")
-                  img(src="img/device/imac.png" alt="macbook air")
-                  .modal-devices__item-title iMac
-              .modal-devices__item
-                input#macmini(type="radio" class="modal-devices__item-input" name="device")
-                label.modal-devices__item-label(for="macmini")
-                  img(src="img/device/macmini.png" alt="Mac mini")
-                  .modal-devices__item-title Mac mini
+        form.modal-form.form(action="")
+          .modal-devices
+            .modal-devices__item
+              input#macbookair(type="radio" class="modal-devices__item-input" name="device")
+              label.modal-devices__item-label(for="macbookair")
+                img(src="img/device/macbookpro.png" alt="macbook air")
+                .modal-devices__item-title MacBook Air
+            .modal-devices__item
+              input#macbookpro(type="radio" class="modal-devices__item-input" name="device")
+              label.modal-devices__item-label(for="macbookpro")
+                img(src="img/device/macbookpro.png" alt="MacBook Pro")
+                .modal-devices__item-title MacBook Pro
+            .modal-devices__item
+              input#imac(type="radio" class="modal-devices__item-input" name="device")
+              label.modal-devices__item-label(for="imac")
+                img(src="img/device/imac.png" alt="macbook air")
+                .modal-devices__item-title iMac
+            .modal-devices__item
+              input#macmini(type="radio" class="modal-devices__item-input" name="device")
+              label.modal-devices__item-label(for="macmini")
+                img(src="img/device/macmini.png" alt="Mac mini")
+                .modal-devices__item-title Mac mini
 
-            .form__title Ваши контактные данные
-            .form-data
-              .form-floating.mb-3
-                input#name.form__input.form-control(type="text" placeholder="Имя")
-                label(for="name") Имя
-              .form-floating.mb-3
-                input#phone.form__input.form-control(type="tel" placeholder="Номер телефона")
-                label(for="phone") Номер телефона
-              +e.BUTTON.form-button.btn(type="submit") Отправить запрос
+          .form__title Ваши контактные данные
+          .form-data
+            .form-floating.mb-3
+              input#name.form__input.form-control(type="text" placeholder="Имя")
+              label(for="name") Имя
+            .form-floating.mb-3
+              input#phone.form__input.form-control(type="tel" placeholder="Номер телефона")
+              label(for="phone") Номер телефона
+            +e.BUTTON.form-button.btn(type="submit") Отправить запрос
