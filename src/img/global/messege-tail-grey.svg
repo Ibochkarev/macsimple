@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="52px" height="35px" viewBox="0 0 52 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Fill 1 Copy</title>
-    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD-/-White" transform="translate(-109.000000, -7244.000000)" fill="#E9E9EA">
-            <g id="Qaustions" transform="translate(-0.518883, 6589.381821)">
-                <g id="Group-6-Copy" transform="translate(110.311840, 589.583395)">
-                    <path d="M23.7291311,65.999684 L1.13686838e-13,65.999684 L1.13686838e-13,68.3997249 C1.13686838e-13,85.8509768 14.1490232,100 31.6002751,100 L50.3744831,100 L50.3744831,99.767738 C35.2821917,97.3850772 23.7291311,84.3626039 23.7291311,68.6003866 L23.7291311,65.999684 Z" id="Fill-1-Copy" transform="translate(25.187242, 82.999842) scale(-1, 1) translate(-25.187242, -82.999842) "></path>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="35" version="1.1" viewBox="0 0 52 35"><title>Fill 1 Copy</title><g id="Main" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="Desktop-HD-/-White" fill="#E9E9EA" transform="translate(-109.000000, -7244.000000)"><g id="Qaustions" transform="translate(-0.518883, 6589.381821)"><g id="Group-6-Copy" transform="translate(110.311840, 589.583395)"><path id="Fill-1-Copy" d="M23.7291311,65.999684 L1.13686838e-13,65.999684 L1.13686838e-13,68.3997249 C1.13686838e-13,85.8509768 14.1490232,100 31.6002751,100 L50.3744831,100 L50.3744831,99.767738 C35.2821917,97.3850772 23.7291311,84.3626039 23.7291311,68.6003866 L23.7291311,65.999684 Z" transform="translate(25.187242, 82.999842) scale(-1, 1) translate(-25.187242, -82.999842)"/></g></g></g></g></svg>
