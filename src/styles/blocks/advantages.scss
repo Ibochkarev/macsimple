@@ -93,6 +93,9 @@
     }
 
     .nav-pills {
+        z-index: 1;
+        position: relative;
+
         @media (max-width: 991px) {
             align-items: flex-start;
             width: 100%;

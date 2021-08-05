@@ -14,7 +14,6 @@ html {
 }
 
 body {
-    background-color: #ffffff;
     position: relative;
     display: flex;
     min-height: 100vh;
@@ -24,6 +23,7 @@ body {
     font-family: 'SF UI Display', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    background-color: #ffffff;
     flex-direction: column;
     scroll-behavior: smooth;
     overflow-x: hidden !important;
@@ -79,7 +79,7 @@ strong {
 
 .row-line-horizontal {
     position: relative;
-    padding-top: 20px;
+    padding-top: 90px;
 
     &::before {
         position: absolute;
@@ -94,5 +94,9 @@ strong {
             #ffffff 100%
         );
         content: '';
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 40px;
     }
 }

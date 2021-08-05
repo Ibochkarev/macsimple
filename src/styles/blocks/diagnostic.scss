@@ -1,4 +1,5 @@
 .diagnostic {
+    padding-top: 0;
     padding-bottom: 45px;
 
     &__form{
@@ -28,6 +29,7 @@
 
     .row-line-horizontal{
         width: 100%;
+        margin: 0 auto;
     }
 }
 

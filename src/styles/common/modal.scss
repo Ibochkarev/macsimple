@@ -43,6 +43,14 @@
         font-size: 59px;
         font-weight: 900;
         color: #1c1c1c;
+
+        @media (max-width: 991px) {
+            font-size: 42px;
+        }
+
+        @media (max-width: 620px) {
+            font-size: 30px;
+        }
     }
 
     &-text {
@@ -50,11 +58,29 @@
         font-weight: 500;
         line-height: 1.25;
         color: #414141;
+
+        @media (max-width: 991px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 620px) {
+            font-size: 16px;
+        }
+    }
+
+    &-body {
+        @media (max-width: 620px) {
+            padding: 0;
+        }
     }
 
     &-info {
         max-width: 65%;
         margin: 0 auto 25px;
+
+        @media (max-width: 620px) {
+            max-width: 100%;
+        }
     }
 
     &-content {
@@ -65,6 +91,10 @@
         box-shadow: none;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+
+        @media (max-width: 620px) {
+            padding: 30px 18px;
+        }
 
         &::before {
             z-index: 1;
@@ -77,6 +107,10 @@
             background-repeat: no-repeat;
             background-size: contain;
             background-image: url('../img/global/Sticker.png');
+
+            @media (max-width: 620px) {
+                display: none;
+            }
         }
     }
 
@@ -84,11 +118,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
         margin-bottom: 45px;
+        flex-wrap: wrap;
         gap: 10px;
+
+        @media (max-width: 620px) {
+            gap: initial;
+        }
 
         &__item {
             width: 25%;
+
+            @media (max-width: 620px) {
+                width: 50%;
+            }
 
             input[type="radio"] {
                 display: none;
@@ -118,6 +162,10 @@
                 font-size: 18px;
                 font-weight: 600;
                 color: #414141;
+
+                @media (max-width: 620px) {
+                    font-size: 14px;
+                }
             }
 
             :checked + label {
@@ -144,5 +192,14 @@
         max-width: 370px;
         margin: 0 auto;
         line-height: 55px;
+    }
+
+
+    &.fade .modal-dialog {
+        transform: translate3d(0, 100vh, 0);
+    }
+
+    &.show .modal-dialog {
+        transform: translate3d(0, 0, 0);
     }
 }
