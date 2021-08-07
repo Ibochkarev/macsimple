@@ -1,6 +1,13 @@
 .reviews {
     padding-bottom: 0;
 
+    @media (max-width: 575px) {
+        .row > * {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
     .swiper-slide-active {
         .reviews__card {
             opacity: 1;
@@ -99,6 +106,10 @@
 
     .swiper-slide {
         height: auto;
+
+        @media (max-width: 575px) {
+            width: 80%;
+        }
     }
 
     .swiper-wrapper {

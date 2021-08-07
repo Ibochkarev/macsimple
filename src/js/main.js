@@ -14,8 +14,9 @@ $(document).ready(() => {
       clickable: true,
     },
     loop: true,
-    slidesPerView: 1,
+    // slidesPerView: 1,
     spaceBetween: 10,
+    slidesPerView: 'auto',
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 575px
