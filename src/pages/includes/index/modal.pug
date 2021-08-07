@@ -38,3 +38,27 @@
               input#phone.form__input.form-control(type="tel" placeholder="Номер телефона")
               label(for="phone") Номер телефона
             +e.BUTTON.form-button.btn(type="submit") Отправить запрос
+
+.modal.fade(id="modalMaster" tabindex="-1" aria-labelledby="modal" aria-hidden="true")
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-info
+        .modal-title Вызов мастера
+        .modal-text Диагностика
+          |
+          |
+          span.product-name-in-modal
+          |
+          | на дому проводится мастером Macsimple бесплатно.
+      .modal-body
+        form.modal-form.form(action="")
+          .form__title Ваши контактные данные
+          .form-data
+            .form-floating.mb-3
+              input#name.form__input.form-control(type="text" placeholder="Имя")
+              label(for="name") Имя
+            .form-floating.mb-3
+              input#phone.form__input.form-control(type="tel" placeholder="Номер телефона")
+              label(for="phone") Номер телефона
+            +e.BUTTON.form-button.btn(type="submit") Отправить запрос

@@ -6,31 +6,56 @@
           |
           br
           | Apple устройство
-        +e.list(data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000")
-          nav
-            #nav-tab.nav.nav-pills(role="tablist")
-              button#nav-01-tab.nav-link.active(data-bs-toggle="pill" data-bs-target="#nav-01" type="button" role="tab" aria-controls="nav-macbookair" aria-selected="true")
-                span.nav-img
-                  img(src="img/device/macbookair.png" srcset="img/device/macbookair@2x.png 2x, img/device/macbookair@3x.png 3x" alt="macbook air")
-                span MacBook Air
-              button#nav-02-tab.nav-link(data-bs-toggle="pill" data-bs-target="#nav-02" type="button" role="tab" aria-controls="nav-macbookpro" aria-selected="false")
-                span.nav-img
-                  img(src="img/device/macbookpro.png" srcset="img/device/macbookpro@2x.png 2x, img/device/macbookpro@3x.png 3x" alt="macbook pro")
-                span MacBook Pro
-              button#nav-03-tab.nav-link(data-bs-toggle="pill" data-bs-target="#nav-03" type="button" role="tab" aria-controls="nav-imac" aria-selected="false")
-                span.nav-img
-                  img(src="img/device/imac.png" srcset="img/device/imac@2x.png 2x, img/device/imac@3x.png 3x" alt="imac")
-                span iMac
-              button#nav-04-tab.nav-link(data-bs-toggle="pill" data-bs-target="#nav-04" type="button" role="tab" aria-controls="nav-macmini" aria-selected="false")
-                span.nav-img
-                  img(src="img/device/macmini.png" srcset="img/device/macmini@2x.png 2x, img/device/macmini@3x.png 3x" alt="mac mini")
-                span Mac mini
-          #nav-tabContent.tab-content
-            #nav-01.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-macbookair")
-              .row
-                .col-12.col-md-10.offset-md-1
-                  +e.H3.subtitle Стоимость работ по ремонту Macbook Air
-                  .table-responsive
+        +e.list
+          .swiper-container.mySwiperThumb.w-100
+            .swiper-wrapper
+              .swiper-slide
+                .device-item
+                  span.nav-img
+                    img(src="img/device/macbookair.png" alt="macbook air")
+                  span MacBook Air
+              .swiper-slide
+                .device-item
+                  span.nav-img
+                    img(src="img/device/macbookpro.png" alt="macbook pro")
+                  span MacBook Pro
+              .swiper-slide
+                .device-item
+                  span.nav-img
+                    img(src="img/device/imac.png" alt="imac")
+                  span iMac
+              .swiper-slide
+                .device-item
+                  span.nav-img
+                    img(src="img/device/macmini.png" alt="mac mini")
+                  span Mac mini
+              .swiper-slide
+                .device-item
+                  span.nav-img
+                    img(src="img/device/macbookair.png" alt="macbook air")
+                  span MacBook Air
+              .swiper-slide
+                .device-item
+                  span.nav-img
+                    img(src="img/device/macbookpro.png" alt="macbook pro")
+                  span MacBook Pro
+              .swiper-slide
+                .device-item
+                  span.nav-img
+                    img(src="img/device/imac.png" alt="imac")
+                  span iMac
+              .swiper-slide
+                .device-item
+                  span.nav-img
+                    img(src="img/device/macmini.png" alt="mac mini")
+                  span Mac mini
+
+          .swiper-container.mySwiper.w-100
+            .swiper-wrapper
+              .swiper-slide
+                .row
+                  .col-12.col-md-10.offset-md-1
+                    +e.H3.subtitle Стоимость работ по ремонту Macbook Air
                     +e.TABLE.table.table
                       tbody
                         tr
@@ -53,12 +78,13 @@
                           +e.TD.table-title Установка MacOS/Windows
                           +e.TD.table-cost 900 руб.
                           +e.TD.table-time от 40 минут
+                    +e.btn-wrap
+                      +e.BUTTON.btn.btn(type="button", data-bs-toggle="modal", data-bs-target="#modalMaster", data-product="MacBook Air") Вызвать мастера
 
-            #nav-02.tab-pane.fade(role="tabpanel" aria-labelledby="nav-macbookpro")
-              .row
-                .col-12.col-md-10.offset-md-1
-                  +e.H3.subtitle Стоимость работ по ремонту Macbook Pro
-                  .table-responsive
+              .swiper-slide
+                .row
+                  .col-12.col-md-10.offset-md-1
+                    +e.H3.subtitle Стоимость работ по ремонту Macbook Pro
                     +e.TABLE.table.table
                       tbody
                         tr
@@ -77,12 +103,13 @@
                           +e.TD.table-title Ремонт после попадания влаги
                           +e.TD.table-cost 1600 руб.
                           +e.TD.table-time от 40 минут
+                    +e.btn-wrap
+                      +e.BUTTON.btn.btn(type="button", data-bs-toggle="modal" data-bs-target="#modalMaster" data-product="MacBook Pro") Вызвать мастера
 
-            #nav-03.tab-pane.fade(role="tabpanel" aria-labelledby="nav-imac")
-              .row
-                .col-12.col-md-10.offset-md-1
-                  +e.H3.subtitle Стоимость работ по ремонту iMac
-                  .table-responsive
+              .swiper-slide
+                .row
+                  .col-12.col-md-10.offset-md-1
+                    +e.H3.subtitle Стоимость работ по ремонту iMac
                     +e.TABLE.table.table
                       tbody
                         tr
@@ -97,17 +124,18 @@
                           +e.TD.table-title Замена матрицы
                           +e.TD.table-cost 4200 руб.
                           +e.TD.table-time от 40 минут
+                    +e.btn-wrap
+                      +e.BUTTON.btn.btn(type="button", data-bs-toggle="modal" data-bs-target="#modalMaster" data-product="iMac") Вызвать мастера
 
-            #nav-04.tab-pane.fade(role="tabpanel" aria-labelledby="nav-macmini")
-              .row
-                .col-12.col-md-10.offset-md-1
-                  +e.H3.subtitle Стоимость работ по ремонту Apple Mac mini
-                  .table-responsive
+              .swiper-slide
+                .row
+                  .col-12.col-md-10.offset-md-1
+                    +e.H3.subtitle Стоимость работ по ремонту Apple Mac mini
                     +e.TABLE.table.table
                       tbody
                         tr
                           +e.TD.table-title Чистка от пыли/Замена термопасты
                           +e.TD.table-cost от 600 руб.
                           +e.TD.table-time от 40 минут
-        +e.btn-wrap
-          +e.BUTTON.btn.btn(type="button", data-bs-toggle="modal" data-bs-target="#modal") Вызвать мастера
+                    +e.btn-wrap
+                      +e.BUTTON.btn.btn(type="button", data-bs-toggle="modal" data-bs-target="#modalMaster" data-product="Mac mini") Вызвать мастера

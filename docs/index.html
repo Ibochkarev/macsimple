@@ -83,22 +83,42 @@
             <div class="col-12">
               <h2 class="section__title" data-aos="fade-up" data-aos-duration="2000">
                 Выберите  своё<br>Apple устройство</h2>
-              <div class="price__list" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
-                <nav>
-                  <div class="nav nav-pills" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-01-tab" data-bs-toggle="pill" data-bs-target="#nav-01" type="button" role="tab" aria-controls="nav-macbookair" aria-selected="true"><span class="nav-img"><img src="img/device/macbookair.png" srcset="img/device/macbookair@2x.png 2x, img/device/macbookair@3x.png 3x" alt="macbook air"></span><span>MacBook Air</span></button>
-                    <button class="nav-link" id="nav-02-tab" data-bs-toggle="pill" data-bs-target="#nav-02" type="button" role="tab" aria-controls="nav-macbookpro" aria-selected="false"><span class="nav-img"><img src="img/device/macbookpro.png" srcset="img/device/macbookpro@2x.png 2x, img/device/macbookpro@3x.png 3x" alt="macbook pro"></span><span>MacBook Pro</span></button>
-                    <button class="nav-link" id="nav-03-tab" data-bs-toggle="pill" data-bs-target="#nav-03" type="button" role="tab" aria-controls="nav-imac" aria-selected="false"><span class="nav-img"><img src="img/device/imac.png" srcset="img/device/imac@2x.png 2x, img/device/imac@3x.png 3x" alt="imac"></span><span>iMac</span></button>
-                    <button class="nav-link" id="nav-04-tab" data-bs-toggle="pill" data-bs-target="#nav-04" type="button" role="tab" aria-controls="nav-macmini" aria-selected="false"><span class="nav-img"><img src="img/device/macmini.png" srcset="img/device/macmini@2x.png 2x, img/device/macmini@3x.png 3x" alt="mac mini"></span><span>Mac mini</span></button>
+              <div class="price__list">
+                <div class="swiper-container mySwiperThumb w-100">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="device-item"><span class="nav-img"><img src="img/device/macbookair.png" alt="macbook air"></span><span>MacBook Air</span></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="device-item"><span class="nav-img"><img src="img/device/macbookpro.png" alt="macbook pro"></span><span>MacBook Pro</span></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="device-item"><span class="nav-img"><img src="img/device/imac.png" alt="imac"></span><span>iMac</span></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="device-item"><span class="nav-img"><img src="img/device/macmini.png" alt="mac mini"></span><span>Mac mini</span></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="device-item"><span class="nav-img"><img src="img/device/macbookair.png" alt="macbook air"></span><span>MacBook Air</span></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="device-item"><span class="nav-img"><img src="img/device/macbookpro.png" alt="macbook pro"></span><span>MacBook Pro</span></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="device-item"><span class="nav-img"><img src="img/device/imac.png" alt="imac"></span><span>iMac</span></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="device-item"><span class="nav-img"><img src="img/device/macmini.png" alt="mac mini"></span><span>Mac mini</span></div>
+                    </div>
                   </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="nav-01" role="tabpanel" aria-labelledby="nav-macbookair">
-                    <div class="row">
-                      <div class="col-12 col-md-10 offset-md-1">
-                        <h3 class="price__subtitle">Стоимость работ по ремонту Macbook Air
-                        </h3>
-                        <div class="table-responsive">
+                </div>
+                <div class="swiper-container mySwiper w-100">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1">
+                          <h3 class="price__subtitle">Стоимость работ по ремонту Macbook Air
+                          </h3>
                           <table class="price__table table">
                             <tbody>
                               <tr>
@@ -143,16 +163,18 @@
                               </tr>
                             </tbody>
                           </table>
+                          <div class="price__btn-wrap">
+                            <button class="price__btn btn" type="button" data-bs-toggle="modal" data-bs-target="#modalMaster" data-product="MacBook Air">Вызвать мастера
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="nav-02" role="tabpanel" aria-labelledby="nav-macbookpro">
-                    <div class="row">
-                      <div class="col-12 col-md-10 offset-md-1">
-                        <h3 class="price__subtitle">Стоимость работ по ремонту Macbook Pro
-                        </h3>
-                        <div class="table-responsive">
+                    <div class="swiper-slide">
+                      <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1">
+                          <h3 class="price__subtitle">Стоимость работ по ремонту Macbook Pro
+                          </h3>
                           <table class="price__table table">
                             <tbody>
                               <tr>
@@ -189,16 +211,18 @@
                               </tr>
                             </tbody>
                           </table>
+                          <div class="price__btn-wrap">
+                            <button class="price__btn btn" type="button" data-bs-toggle="modal" data-bs-target="#modalMaster" data-product="MacBook Pro">Вызвать мастера
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="nav-03" role="tabpanel" aria-labelledby="nav-imac">
-                    <div class="row">
-                      <div class="col-12 col-md-10 offset-md-1">
-                        <h3 class="price__subtitle">Стоимость работ по ремонту iMac
-                        </h3>
-                        <div class="table-responsive">
+                    <div class="swiper-slide">
+                      <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1">
+                          <h3 class="price__subtitle">Стоимость работ по ремонту iMac
+                          </h3>
                           <table class="price__table table">
                             <tbody>
                               <tr>
@@ -227,16 +251,18 @@
                               </tr>
                             </tbody>
                           </table>
+                          <div class="price__btn-wrap">
+                            <button class="price__btn btn" type="button" data-bs-toggle="modal" data-bs-target="#modalMaster" data-product="iMac">Вызвать мастера
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="nav-04" role="tabpanel" aria-labelledby="nav-macmini">
-                    <div class="row">
-                      <div class="col-12 col-md-10 offset-md-1">
-                        <h3 class="price__subtitle">Стоимость работ по ремонту Apple Mac mini
-                        </h3>
-                        <div class="table-responsive">
+                    <div class="swiper-slide">
+                      <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1">
+                          <h3 class="price__subtitle">Стоимость работ по ремонту Apple Mac mini
+                          </h3>
                           <table class="price__table table">
                             <tbody>
                               <tr>
@@ -249,15 +275,15 @@
                               </tr>
                             </tbody>
                           </table>
+                          <div class="price__btn-wrap">
+                            <button class="price__btn btn" type="button" data-bs-toggle="modal" data-bs-target="#modalMaster" data-product="Mac mini">Вызвать мастера
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="price__btn-wrap">
-                <button class="price__btn btn" type="button" data-bs-toggle="modal" data-bs-target="#modal">Вызвать мастера
-                </button>
               </div>
             </div>
           </div>
@@ -578,6 +604,38 @@
                     </label>
                   </div>
                 </div>
+                <div class="form__title">Ваши контактные данные</div>
+                <div class="form-data">
+                  <div class="form-floating mb-3">
+                    <input class="form__input form-control" id="name" type="text" placeholder="Имя">
+                    <label for="name">Имя</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form__input form-control" id="phone" type="tel" placeholder="Номер телефона">
+                    <label for="phone">Номер телефона</label>
+                  </div>
+                  <button class="form-button btn" type="submit">Отправить запрос
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalMaster" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-info">
+              <div class="modal-title">Вызов мастера</div>
+              <div class="modal-text">
+                Диагностика
+                <span class="product-name-in-modal"></span>
+                на дому проводится мастером Macsimple бесплатно.
+              </div>
+            </div>
+            <div class="modal-body">
+              <form class="modal-form form" action="">
                 <div class="form__title">Ваши контактные данные</div>
                 <div class="form-data">
                   <div class="form-floating mb-3">

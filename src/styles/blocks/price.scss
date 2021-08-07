@@ -1,4 +1,5 @@
 .price {
+    padding-bottom: 0;
 
     &__list {
         display: flex;
@@ -7,25 +8,11 @@
         margin-bottom: 35px;
         flex-direction: column;
 
-        .nav {
-            justify-content: center;
-            gap: 18px;
-
-            @media (max-width: 768px) {
-                justify-content: center;
-                gap: 10px;
-            }
-
-            @media (max-width: 575px) {
-                margin-right: calc(var(--bs-gutter-x) * -.5);
-                margin-left: calc(var(--bs-gutter-x) * -.5);
-            }
-        }
-
-        .nav-link {
+        .device-item {
             display: flex;
             justify-content: space-between;
             width: 219px;
+            height: 100%;
             padding: 20px 13px 25px;
             font-size: 18px;
             font-weight: 600;
@@ -61,7 +48,7 @@
 
             &.active {
                 color: #414141;
-                background-color: #f5f5f7;
+                background-color: #cde1ff;
             }
 
             .nav-img {
@@ -128,5 +115,76 @@
         &-time {
             text-align: right;
         }
+    }
+}
+
+
+.mySwiperThumb .swiper-slide .nav-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.mySwiper{
+    overflow-x: hidden;
+}
+
+.mySwiperThumb {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mySwiperThumb .swiper-slide {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 219px;
+    height: 100%;
+    flex-direction: column;
+
+    @media (max-width: 960px) {
+        width: 20%;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 575px) {
+        width: calc(100% / 3 - 10px);
+        margin-bottom: 5px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all ease .7s;
+
+        @media (max-width: 768px) {
+            transform: none;
+        }
+    }
+
+    &.active {
+        color: #414141;
+        background-color: #cde1ff;
+    }
+
+    .nav-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: auto;
+        height: 100%;
+        max-height: 192px;
+    }
+
+
+    &.swiper-slide-thumb-active{
+
     }
 }

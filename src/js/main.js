@@ -3,8 +3,8 @@ window.$ = window.jQuery = require('jquery')
 
 import AOS from "../../node_modules/aos/dist/aos"
 
-import { Swiper, Pagination, Mousewheel, Autoplay } from 'swiper'
-Swiper.use([Pagination, Mousewheel, Autoplay])
+import { Swiper, Pagination, Mousewheel, Autoplay, Thumbs, Navigation } from 'swiper'
+Swiper.use([Pagination, Mousewheel, Autoplay, Thumbs, Navigation])
 
 import Bootstrap from '../../node_modules/bootstrap/dist/js/bootstrap.bundle'
 
@@ -18,7 +18,47 @@ $(document).ready(() => {
     disable: window.innerWidth < 768,
   })
 
-  const swiper = new Swiper('.reviews__slider', {
+  var swiper = new Swiper(".mySwiperThumb", {
+    spaceBetween: 15,
+    slidesPerView: 1,
+    loop: true,
+    freeMode: true,
+    centeredSlides: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    dynamicBullets: true,
+    slidesPerView: 'auto',
+    pagination: {
+        el: '.swiper-pagination2',
+        clickable: true,
+    },
+    breakpoints: {
+      // when window width is >= 992px
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 35,
+      },
+      // when window width is >= 1336px
+      1336: {
+        slidesPerView: 6,
+        spaceBetween: 25
+      },
+    },
+  });
+
+  var deviceSwiperPagination = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+  });
+
+  const reviewSlider = new Swiper('.reviews__slider', {
     centeredSlides: true,
     pagination: {
       el: '.swiper-pagination',
@@ -48,6 +88,16 @@ $(document).ready(() => {
     },
   })
 
+  // Change name title device in modal
+  let modalMaster = document.getElementById('modalMaster')
+    modalMaster.addEventListener('show.bs.modal', function (event) {
+    let button = event.relatedTarget
+    let product = button.getAttribute('data-product')
+    // modalMaster.querySelector('#device').value = product;
+    modalMaster.querySelector('.product-name-in-modal').textContent = product;
+    })
+
+  // Show more faq items
   $('.faq__more-btn').click(function() {
     $('.faq__item').removeClass('hidden');
     $('.faq__more-btn').hide();
