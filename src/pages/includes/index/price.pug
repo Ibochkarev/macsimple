@@ -2,11 +2,11 @@
   .container
     .row
       .col-12
-        h2.section__title Выберите  своё
+        h2.section__title(data-aos="fade-up" data-aos-duration="2000") Выберите  своё
           |
           br
           | Apple устройство
-        +e.list
+        +e.list(data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000")
           nav
             #nav-tab.nav.nav-pills(role="tablist")
               button#nav-01-tab.nav-link.active(data-bs-toggle="pill" data-bs-target="#nav-01" type="button" role="tab" aria-controls="nav-macbookair" aria-selected="true")

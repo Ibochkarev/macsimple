@@ -2,10 +2,6 @@
     padding: 20px 20px 13px 21px;
     background-color: #000000;
 
-    @media (max-width: 992px) {
-        margin-top: 60px;
-    }
-
     &__wrap {
         display: flex;
         align-items: center;
@@ -32,6 +28,11 @@
             a {
                 display: block;
                 color: white;
+                transition: .5s all ease-in;
+
+                &:hover {
+                    opacity: 0.8;
+                }
             }
 
             span {
@@ -41,8 +42,8 @@
     }
 
     &__creator {
-        flex: none;
         margin-right: 10px;
+        flex: none;
 
         img {
             width: auto;

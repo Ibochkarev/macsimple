@@ -1,12 +1,23 @@
 import $ from '../local_modules/jquery/dist/jquery.min'
 window.$ = window.jQuery = require('jquery')
 
+import AOS from "../../node_modules/aos/dist/aos"
+
 import { Swiper, Pagination, Mousewheel, Autoplay } from 'swiper'
 Swiper.use([Pagination, Mousewheel, Autoplay])
 
 import Bootstrap from '../../node_modules/bootstrap/dist/js/bootstrap.bundle'
 
 $(document).ready(() => {
+
+  AOS.init({
+    duration: 700,
+    easing: "ease-out-quad",
+    once: !0,
+    startEvent: "load",
+    disable: window.innerWidth < 768,
+  })
+
   const swiper = new Swiper('.reviews__slider', {
     centeredSlides: true,
     pagination: {

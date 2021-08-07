@@ -25,7 +25,7 @@
         .nav-link {
             display: flex;
             justify-content: space-between;
-            width: 219px;
+            // width: 219px;
             padding: 20px 13px 25px;
             font-size: 18px;
             font-weight: 600;
@@ -37,18 +37,18 @@
             background-color: #f5f5f7;
             flex-direction: column;
 
-            @media (max-width: 960px) {
-                width: 20%;
-            }
+            // @media (max-width: 960px) {
+            //     width: 20%;
+            // }
 
             @media (max-width: 768px) {
                 font-size: 14px;
             }
 
-            @media (max-width: 575px) {
-                width: calc(100% / 3 - 10px);
-                margin-bottom: 5px;
-            }
+            // @media (max-width: 575px) {
+            //     width: calc(100% / 3 - 10px);
+            //     margin-bottom: 5px;
+            // }
 
             &:hover {
                 transform: scale(1.1);
@@ -61,7 +61,7 @@
 
             &.active {
                 color: #414141;
-                background-color: #cde1ff;
+                background-color: #f5f5f7;
             }
 
             .nav-img {
