@@ -1,4 +1,12 @@
 .advantages {
+
+    @media (max-width: 575px) {
+        .row > * {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
     &__wrapper {
         overflow: hidden;
         position: relative;
@@ -49,13 +57,23 @@
         display: flex;
         align-items: flex-start;
         width: 215px;
-        padding: 0;
+        padding: 20px;
+        border-radius: 10px;
         opacity: 0.4;
+        transition: .3s;
         flex: none;
         flex-direction: column;
 
         @media (max-width: 991px) {
             width: 200px;
+        }
+
+        &:hover {
+            padding: 20px;
+            background: #ffffff2e;
+            border-radius: 10px;
+            opacity: 1;
+            transition: .3s;
         }
 
         img {
@@ -79,7 +97,7 @@
         }
 
         &:not(:last-child) {
-            margin-bottom: 60px;
+            margin-bottom: 20px;
 
             @media (max-width: 991px) {
                 margin-bottom: 0;

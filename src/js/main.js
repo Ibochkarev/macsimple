@@ -13,21 +13,26 @@ $(document).ready(() => {
       el: '.swiper-pagination',
       clickable: true,
     },
+    loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
     // Responsive breakpoints
     breakpoints: {
-      // when window width is >= 480px
+      // when window width is >= 575px
       575: {
         slidesPerView: 2,
         spaceBetween: 60,
       },
-      // when window width is >= 640px
+      // when window width is >= 992px
       992: {
         slidesPerView: 3,
         spaceBetween: 35,
       },
-      1336: { slidesPerView: 3, spaceBetween: 130 },
+      // when window width is >= 1336px
+      1336: {
+        slidesPerView: 3,
+        spaceBetween: 130
+      },
     },
   })
 

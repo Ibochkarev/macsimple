@@ -7,6 +7,10 @@
         -webkit-backdrop-filter: blur(4px);
         backdrop-filter: blur(4px);
         background-color: rgba(53, 57, 65, 0.42);
+
+        &.show {
+            opacity: 1;
+        }
     }
 
     .btn-close {
