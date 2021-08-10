@@ -1,6 +1,11 @@
 .price {
     padding-bottom: 0;
 
+    .swiper-slide-thumb-active .device-item{
+        color: #414141;
+        background-color: #cde1ff;
+    }
+
     &__list {
         display: flex;
         align-items: center;
@@ -13,6 +18,7 @@
             justify-content: space-between;
             width: 219px;
             height: 100%;
+            margin: 0 5px;
             padding: 20px 13px 25px;
             font-size: 18px;
             font-weight: 600;
@@ -24,22 +30,24 @@
             background-color: #f5f5f7;
             flex-direction: column;
 
-            @media (max-width: 960px) {
-                width: 20%;
-            }
+            // @media (max-width: 960px) {
+            //     width: 20%;
+            // }
 
             @media (max-width: 768px) {
                 font-size: 14px;
             }
 
-            @media (max-width: 575px) {
-                width: calc(100% / 3 - 10px);
-                margin-bottom: 5px;
-            }
+            // @media (max-width: 575px) {
+            //     width: calc(100% / 3 - 10px);
+            //     margin-bottom: 5px;
+            // }
 
             &:hover {
                 transform: scale(1.1);
                 transition: all ease .7s;
+                color: #414141;
+                background-color: #cde1ff;
 
                 @media (max-width: 768px) {
                     transform: none;
@@ -143,27 +151,18 @@
     height: 100%;
     flex-direction: column;
 
-    @media (max-width: 960px) {
-        width: 20%;
-    }
+    // @media (max-width: 960px) {
+    //     width: 20%;
+    // }
 
     @media (max-width: 768px) {
         font-size: 14px;
     }
 
-    @media (max-width: 575px) {
-        width: calc(100% / 3 - 10px);
-        margin-bottom: 5px;
-    }
-
-    &:hover {
-        transform: scale(1.1);
-        transition: all ease .7s;
-
-        @media (max-width: 768px) {
-            transform: none;
-        }
-    }
+    // @media (max-width: 575px) {
+    //     width: calc(100% / 3 - 10px);
+    //     margin-bottom: 5px;
+    // }
 
     &.active {
         color: #414141;

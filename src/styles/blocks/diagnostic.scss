@@ -42,6 +42,14 @@
         width: 100%;
         margin: 0 auto;
     }
+
+    .form__title {
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        color: #1c1c1c;
+    }
 }
 
 .center{
@@ -82,6 +90,10 @@
         a {
             margin-bottom: 25px;
             color: #1978f0;
+
+            span {
+                opacity: 1 !important;
+            }
         }
     }
 

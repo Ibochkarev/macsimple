@@ -1,7 +1,9 @@
-import $ from '../local_modules/jquery/dist/jquery.min'
-window.$ = window.jQuery = require('jquery')
+// import $ from '../local_modules/jquery/dist/jquery.min'
+// window.$ = window.jQuery = require('jquery')
 
-import AOS from "../../node_modules/aos/dist/aos"
+import Inputmask from "inputmask";
+
+// import AOS from "../../node_modules/aos/dist/aos"
 
 import { Swiper, Pagination, Mousewheel, Autoplay, Thumbs, Navigation } from 'swiper'
 Swiper.use([Pagination, Mousewheel, Autoplay, Thumbs, Navigation])
@@ -10,16 +12,16 @@ import Bootstrap from '../../node_modules/bootstrap/dist/js/bootstrap.bundle'
 
 $(document).ready(() => {
 
-  AOS.init({
-    duration: 700,
-    easing: "ease-out-quad",
-    once: !0,
-    startEvent: "load",
-    disable: window.innerWidth < 768,
-  })
+  // AOS.init({
+  //   duration: 700,
+  //   easing: "ease-out-quad",
+  //   once: !0,
+  //   startEvent: "load",
+  //   disable: window.innerWidth < 768,
+  // })
 
   var swiper = new Swiper(".mySwiperThumb", {
-    spaceBetween: 15,
+    spaceBetween: 25,
     slidesPerView: 1,
     loop: true,
     freeMode: true,
@@ -34,14 +36,21 @@ $(document).ready(() => {
     },
     breakpoints: {
       // when window width is >= 992px
-      992: {
-        slidesPerView: 5,
+      575: {
+        slidesPerView: 3,
+        spaceBetween: 35,
+      },
+      768: {
+        slidesPerView: 4,
         spaceBetween: 35,
       },
       // when window width is >= 1336px
       1336: {
+        slidesPerView: 5,
+        spaceBetween: 35
+      },
+      1600: {
         slidesPerView: 6,
-        spaceBetween: 25
       },
     },
   });
@@ -90,12 +99,15 @@ $(document).ready(() => {
 
   // Change name title device in modal
   let modalMaster = document.getElementById('modalMaster')
-    modalMaster.addEventListener('show.bs.modal', function (event) {
+  modalMaster.addEventListener('show.bs.modal', function (event) {
     let button = event.relatedTarget
     let product = button.getAttribute('data-product')
     // modalMaster.querySelector('#device').value = product;
     modalMaster.querySelector('.product-name-in-modal').textContent = product;
-    })
+  })
+
+  var selector = document.getElementsByClassName("phone");
+  Inputmask({"mask": "+7 (999) 999-9999", "clearIncomplete": true}).mask(selector);
 
   // Show more faq items
   $('.faq__more-btn').click(function() {
