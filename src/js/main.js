@@ -58,6 +58,7 @@ $(document).ready(() => {
   var deviceSwiperPagination = new Swiper(".mySwiper", {
     spaceBetween: 10,
     loop: true,
+    autoHeight: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
